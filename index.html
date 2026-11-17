@@ -941,8 +941,8 @@
       <!-- Track 1 Drum Channel Sub-Sliders (Minimized by Default) -->
       <div class="drum-channel-panel">
         <div style="display:flex; justify-content:space-between; align-items:center;">
-          <span style="font-size:9px; color:#aaa;">01 DRUM CHANNEL INDIVIDUAL VOLUMES</span>
-          <button id="toggleDrumSlidersBtn" style="font-size:8px; padding:2px 6px;">+ EXPAND DRUM VOLUMES</button>
+          <span style="font-size:9px; color:#aaa;">01 DRUM CHANNEL SUB-MIXER</span>
+          <button id="toggleDrumSlidersBtn" style="font-size:8px; padding:2px 6px;">+ SHOW SUB-MIXER</button>
         </div>
         <div id="drumSlidersContainer" class="drum-channel-sliders" style="display:none;">
           <div class="drum-slider-strip">
@@ -1564,7 +1564,7 @@
   toggleDrumSlidersBtn.onclick = () => {
     const isHidden = drumSlidersContainer.style.display === 'none';
     drumSlidersContainer.style.display = isHidden ? 'flex' : 'none';
-    toggleDrumSlidersBtn.innerText = isHidden ? '- HIDE DRUM VOLUMES' : '+ EXPAND DRUM VOLUMES';
+    toggleDrumSlidersBtn.innerText = isHidden ? '- HIDE SUB-MIXER' : '+ SHOW SUB-MIXER';
   };
 
   document.querySelectorAll('.drum-fader').forEach(fader => {
